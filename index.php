@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +31,14 @@
 <li><a href="./cookies.php">Cookies</a></li>
 <li><a href="./sessions.php">Creating Sessions </a></li>
 <li><a href="./sessions_Admin.php">Sessions Admin Page</a></li>
+<li><a href="./sql/">SQL Comands</a></li>
+<li><a href="./dbConnection.php">Connecting to a database</a></li>
 
+
+<?php
+$conn; //Referes to  access connection to database from php includes file 
+
+?>
 
 </ul>
 
