@@ -10,94 +10,18 @@
 </head>
 
 <body>
-<form method="GET">
-<input type="text" name="person_name">
-<button>SUBMIT</button>
-</form>
 
-<?php
- echo "This is how to print out in php usinf 'Echo'  <br>";
- print"This is using the Print<br>";
-
- echo 5+54 ."<br>";
-
- $name = $_GET['person_name'];
-
- echo $name;
-
- echo"<br>".$name."is a  Name";
-
- //Single Line comments in php
-
- /*
-Multiple line Commenting
- */
-
-
- //PHP Functions
-
- //String Length = Calculates the tring length
- echo strlen("Hi Daniel");
-
- echo"<br>";
- //String word count 
- echo str_word_count("Hi Daniel");
- echo"<br>";
-
- 
- //String Reverse 
- echo strrev("Hi Daniel");
-
-//String Position
-echo"<br>";
-echo strpos ("Hi Danniel Okello", "Okello");
-
-//Replace the string
-
-//String Replace
-echo"<br>";
-echo str_replace ("Okello","Omoro","Hi Danniel Okello");
-
-//Variables
-
-//String
-$string_variable = "this is a String";
-
-//Integer Variable
-$integer_variable=24;
-
-//Float Variable
-$float_variable=34.456;
-
-//Boolean Variable
-//true=1
-//false=0
-
-//Array Variable
-$names_array = array("Ben", "okello","Micheal");
- echo $names_array ["2"];
-
-
-
-//Using Case
-$x =1;
-
-switch ($x){
-
-    case 1:
-        echo "<br>The Answer is One";
-        break;
-    Case 2:
-         echo "The Answer is One";
-         break;
-    Case 3:
-         echo "The Answer is One";
-         break;
-    default:
-        echo "There is no answer";
-}
-
-?>
+<ul>
+<li><a href="./Genearal.php">geneal PHP</a></li>
+<li><a href="./Calculator.php">Calculator App</a></li>
+<li><a href="./DayOfWeek.php">Days Of Week </a></li>
+<li><a href="./While_Loop.php">While Loop</a></li>
+<li><a href="./DoWhileLoop.php">Do While Loop</a></li>
+<li><a href="./ForLoop.php">For Loop</a></li>
+<li><a href="./ForEach_Loop.php">For Each Loop</a></li>
+<li><a href="./arrays.php">Using Arrays to Store Data</a></li>
+<li><a href="./UserDefined_Functions.php">User Defined Functions</a></li>
+</ul>
 
 </body>
 </html>

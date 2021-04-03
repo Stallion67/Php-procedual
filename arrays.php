@@ -7,7 +7,7 @@
 <meta name="author" content="Book Dojo">
     <meta name="keywords" content="book,language,reading,author">
     <meta name="description" content="The Book Repository">
-<title>Procedual PHP : ForEach Loop</title>
+<title>Procedual PHP : Using Arrays to store Data</title>
 </head>
 
 <body>
@@ -16,12 +16,10 @@
 </form>
 <?php
 
-//for Each Loop involvees a array
-$array =array("Daniel","Jane","John","Ben","Okello");
+  $array =array("Daniel","Jane","John","Ben","Okello");
+  
+  echo $array[0];
 
-foreach($array as $loopdata){
-    echo "My name is ".$loopdata."<br>";
-}
 
 ?>
 
