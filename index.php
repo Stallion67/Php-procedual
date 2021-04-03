@@ -22,6 +22,12 @@
 <li><a href="./arrays.php">Using Arrays to Store Data</a></li>
 <li><a href="./UserDefined_Functions.php">User Defined Functions</a></li>
 <li><a href="./Include_Documements.php">Incuding Documents using Functions</a></li>
+<li><a href="./superGlobals.php">Globals Functions</a></li>
+<li><a href="./GetAndSet.php">SuperGlobals Get and SetFunctions</a></li>
+<li><a href="./cookies.php">Cookies</a></li>
+<li><a href="./sessions.php">Creating Sessions </a></li>
+<li><a href="./sessions_Admin.php">Sessions Admin Page</a></li>
+
 
 </ul>
 
