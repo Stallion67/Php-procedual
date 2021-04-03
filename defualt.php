@@ -4,18 +4,17 @@
 <head>
 <meta charset="UTF-8"/>
 
-<meta name="author" content="Book Dojo">
-    <meta name="keywords" content="book,language,reading,author">
-    <meta name="description" content="The Book Repository">
+<meta name="BEN OKELLO" content="PHP">
+    <meta name="keywords" content="book,language,PHP,author">
+    <meta name="description" content="My PHP Repository">
 <title>Procedual PHP : Title</title>
 </head>
 
 <body>
 
-<form>
-</form>
+
 <?php
-  
+
 ?>
 
 </body>

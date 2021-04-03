@@ -21,6 +21,8 @@
 <li><a href="./ForEach_Loop.php">For Each Loop</a></li>
 <li><a href="./arrays.php">Using Arrays to Store Data</a></li>
 <li><a href="./UserDefined_Functions.php">User Defined Functions</a></li>
+<li><a href="./Include_Documements.php">Incuding Documents using Functions</a></li>
+
 </ul>
 
 </body>
