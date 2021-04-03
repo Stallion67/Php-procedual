@@ -4,3 +4,5 @@ CREATE TABLE posts (
   content varchar(1000) not null,
   date datetime not null
 );
+
+

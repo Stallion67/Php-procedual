@@ -1,0 +1,3 @@
+INSERT INTO posts ( subject, content, date
+) VALUES  ('THis is A Psot Subject about ASIDE','An aside element is typically intended for content that is tangential to the primary content nearby.  In a news article this might be where a pull quote is placed; ‘within’ the article content but off to the side or emphasized in some way.  In our example here, we’re using the description list element to put some glossary terms into an aside.','2021-11-14 23:38:01'
+);
