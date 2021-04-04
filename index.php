@@ -35,7 +35,7 @@
 <li><a href="./dbConnection.php">Connecting to a database and Accesing the databse from the website</a></li>
 <li><a href="./insertData.php">Insert Data from a website in php</a></li>
 <li><a href="./preparedStatements.php">Prepared Statements</a></li>
-
+<li><a href="./preparedStatementsInsert.php">Inserting Data Using Prepared Statements</a></li>
 <?php
 $conn; //Referes to  access connection to database from php includes file 
 
