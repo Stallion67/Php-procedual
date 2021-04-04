@@ -24,7 +24,7 @@ include_once 'includes/dbh.inc.php';
     <br>
     <input type="text" name="user_Name" placeholder="User Name">
     <br>
-    <input type="pasword" name="user_Password" placeholder="Password">
+    <input type="password" name="user_Password" placeholder="Password">
     <br>
     <button type="submit" name="submit">Sign Up</button>
 </form>

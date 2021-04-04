@@ -36,6 +36,7 @@
 <li><a href="./insertData.php">Insert Data from a website in php</a></li>
 <li><a href="./preparedStatements.php">Prepared Statements</a></li>
 <li><a href="./preparedStatementsInsert.php">Inserting Data Using Prepared Statements</a></li>
+<li><a href="./ErrorHandling.php">Error Handlers while Inserting</a></li>
 <?php
 $conn; //Referes to  access connection to database from php includes file 
 
