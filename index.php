@@ -1,5 +1,5 @@
 <?php
-include_once 'includes/dbh.inc.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +32,8 @@ include_once 'includes/dbh.inc.php';
 <li><a href="./sessions.php">Creating Sessions </a></li>
 <li><a href="./sessions_Admin.php">Sessions Admin Page</a></li>
 <li><a href="./sql/">SQL Comands</a></li>
-<li><a href="./dbConnection.php">Connecting to a database</a></li>
+<li><a href="./dbConnection.php">Connecting to a database and Accesing the databse from the website</a></li>
+<li><a href="./insertData.php">Insert Data from a website in php</a></li>
 
 
 <?php
