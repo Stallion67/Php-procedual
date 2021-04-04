@@ -3,11 +3,12 @@
 include_once 'dbh.inc.php';
 
 //Referencing to inputs
- $firstN =$_POST['first_Name'];
- $lastN =$_POST['last_Name'];
- $email =$_POST['user_email'];
- $uid =$_POST['user_Name'];
- $pwd =$_POST['user_Password'];
+//Escaping characters using MYSQLi
+ $firstN =mysqli_real_escape_string($conn,$_POST['first_Name']) ;
+ $lastN =mysqli_real_escape_string($conn,$_POST['last_Name']) ;
+ $email =mysqli_real_escape_string($conn,$_POST['user_email']) ;
+ $uid =mysqli_real_escape_string($conn,$_POST['user_Name']) ;
+ $pwd =mysqli_real_escape_string($conn,$_POST['user_Password']) ;
 
 
 //Below is a normal insert Statement
