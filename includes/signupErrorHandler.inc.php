@@ -12,21 +12,32 @@ if(isset($_POST['submit'])){
     $pwd=$_POST['user_Password'];
 
     if(empty($firstN) || empty($lastN) || empty($email) || empty($uid) || empty($pwd)){
-        header("Location:../ErrorHandling.php?signup=empty");
+        header("Location:../ErrorHandling.php?signupErrorHandler=empty");
+        exit();
     }
     else{
-        //checking if email is not legitimate
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL   )) {
-            header("Location:../ErrorHandling.php?signup=invalidemail");
+        //Check if Characters are Valid
+        if (!preg_match("/^[a-zA-Z]*$/",$firstN) ||!preg_match("/^[a-zA-Z]*$/",$lastN)) {
+            header("Location:../ErrorHandling.php?signupErrorHandler=char");
+            exit();
+        
+        }else{
+                //checking if email is not legitimate
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                header("Location:../ErrorHandling.php?signupErrorHandler=invalidemail");
+                exit();
+             }
+                else{
+                //echo "Sign Up the user!!";
+                header("Location:../ErrorHandling.php?signupErrorHandler=success");
+                exit();
+             }
         }
-        else{
-           echo "Sign Up the user!!";
-        }
-
     }
 
 }
 else{
     //Redirect  with error Message
-    header("Location:../ErrorHandling.php?signup=error");
+    header("Location:../ErrorHandling.php?signupErrorHandler=error");
+
 }
