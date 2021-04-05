@@ -38,6 +38,9 @@
 <li><a href="./preparedStatementsInsert.php">Inserting Data Using Prepared Statements</a></li>
 <li><a href="./ErrorHandling.php">Error Handlers while Inserting</a></li>
 <li><a href="./ErrorHandling2.php">Advanced Error Handlers while Inserting</a></li>
+<li><a href="./hashing.php">Hashing Passwords in PHP</a></li>
+
+
 <?php
 $conn; //Referes to  access connection to database from php includes file 
 
