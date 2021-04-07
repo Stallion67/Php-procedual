@@ -25,3 +25,14 @@ ul {
   wrapper-main{}
   section-default{}
   .form-signup{}
+
+  .signupsucces{
+    color:rgb(7, 184, 7);
+    text-size-adjust: 20pt;
+  }
+  .signuperror{
+    color:red;
+    text-size-adjust: 20pt;
+  }
+ 
+  
