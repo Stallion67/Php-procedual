@@ -29,10 +29,9 @@ if (isset($_POST['login-submit'])) {
 
                     if ($row =mysqli_fetch_assoc($result)) {
                         # code...
-                        $pwdCheck=password_verify($password,$row['pwdUsers']);
-                        exit();
+                        $pwdCheck = password_verify($password,$row['pwdUsers']);
                             if($pwdCheck == false){
-                                header("Location:../index.php?error=wrongpwd");
+                                header("Location: ../index.php?error=wrongpwd");
                                 exit();
                             }
                             else if ($pwdCheck == true) {
@@ -44,17 +43,17 @@ if (isset($_POST['login-submit'])) {
                                 $_SESSION['userLname']=$row['usersLastName'];
 
                                 //Redirect user with success message
-                                header("Location:../index.php?login=success");
+                                header("Location: ../index.php?login=success");
                                 exit();
 
                             }
                             else{
-                                header("Location:../index.php?error=wrongpwd");
+                                header("Location: ../index.php?error=wrongpwd");
                                 exit();
                             }
                     }
                     else{
-                        header("Location:../index.php?error=nouser");
+                        header("Location: ../index.php?error=nouser");
                         exit();
                     }
                 
