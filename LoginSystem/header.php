@@ -31,21 +31,39 @@
 
                 <!--Login/Logout forms-->
                 <div class="header-login">
-                     <!--Begin Login-->
-                     <form action="includes/login.inc.php" method="post">
-                        <input type="text" name="mailuid" placeholder="Username/E-mail..">
-                        <input type="password" name="pwd" placeholder="Password">
-                        <button type ="submit" name="login-submit">Login</button>
-                     </form>
-                     <!--END ogin-->
+
+                <?php
+                        if(isset($_SESSION['userId'])){
+
+                            echo'
+                                    <!--Begin Logout Form-->
+                                    <form action="includes/logout.inc.php" method="post">
+                                    <button type ="submit" name="logout-submit">Logout</button>
+                                    </form>
+                                    <!--Begin Logout Form--> 
+                            ';
+                        }
+                        else {
+                            # code...
+                            echo'
+                                    <!--Begin Login-->
+                                    <form action="includes/login.inc.php" method="post">
+                                    <input type="text" name="mailuid" placeholder="Username/E-mail..">
+                                    <input type="password" name="pwd" placeholder="Password">
+                                    <button type ="submit" name="login-submit">Login</button>
+                                    </form>
+                                    <!--END Login-->
+                            
+                                    <a href="signup.php">Signup</a>
+                            ';
+                        }
+
+                   ?>       
                    
-                     <a href="signup.php">Signup</a>
+                   
+                   
                     
-                     <!--Begin Logout Form-->
-                     <form action="includes/logout.inc.php" method="post">
-                        <button type ="submit" name="logout-submit">Logout</button>
-                     </form>
-                     <!--Begin Logout Form--> 
+                   
                 </div>
 
             </nav>

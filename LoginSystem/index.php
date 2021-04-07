@@ -8,19 +8,15 @@
                    <?php
                         if(isset($_SESSION['userId'])){
 
-                            echo" <p>You are logged In!</p>";
-
+                            echo'<p clas="login-status">You are logged In!</p>';
                         }
                         else {
                             # code...
-                            echo"<p>You are logged out!</p>";
+                            echo'<p clas="login-status">You are logged out!</p>';
                         }
-                   
-                   
-                   ?>
-                   
-                
 
+                   ?>        
+                
                 </section>
             </div>      
      
