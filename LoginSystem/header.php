@@ -1,3 +1,7 @@
+<?php
+ session_start();   //Create the session on all pages
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
