@@ -40,6 +40,8 @@
 <li><a href="./ErrorHandling2.php">Advanced Error Handlers while Inserting</a></li>
 <li><a href="./hashing.php">Hashing Passwords in PHP</a></li>
 <li><a href="./LoginSystem/index.php">Login System</a></li>
+<li><a href="./ArrayAddData.php">Adding Data into an Array</a></li>
+
 
 
 <?php
