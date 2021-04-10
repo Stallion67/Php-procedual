@@ -18,8 +18,19 @@
 //create the Array
 $data = array();
 
+//methord 1
 $data[]="Daniel";
 echo $data[0];
+
+
+
+
+//methord 2 
+$data2=array('sw','er');
+echo '<br';
+array_push($data2, "Daniel",12,45,"Yo-Waste");
+print_r($data2);
+
 
 ?>
 
