@@ -45,7 +45,7 @@
 <li><a href="./arrayTypes.php">Different Types of Arrays</a></li>
 <li><a href="./Associative.php">Associative Arrays</a></li>
 <li><a href="./Multidimensionalarray.php">Multi-Dimensional Arrays</a></li>
-
+<li><a href="./UplaodingFiles/UploadImagesandFiles.php">Uploading Images and Files</a></li>
 
 <?php
 $conn; //Referes to  access connection to database from php includes file 
