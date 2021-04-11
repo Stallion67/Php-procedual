@@ -24,10 +24,12 @@ include_once 'includes/dbh.inc.php';
         $sql = "SELECT * FROM users;"; //Query it inside the Database
         $result = mysqli_query($conn, $sql);
         $datas = array();
+        $datas2 = array();
 
             if(mysqli_num_rows($result)>0){ //If Data exists
                 while ($row = mysqli_fetch_assoc($result)) {
                    $datas[]=$row;
+                   $datas2[]=$row;
                 }
             }
 
@@ -44,9 +46,10 @@ include_once 'includes/dbh.inc.php';
 
            echo"<br>";
             //to get one row of data
-            foreach($datas as $data){ // to get one coloum of data
-                echo  $data;
-                echo $data['uidUsers']."<br>";
+            foreach($datas2 as $data2){ // to get one coloum of data
+              
+                echo $data2 ['user_first']."<br>"; //Note the DB table in connection from thisdocument
+                
             }
 
 ?>
