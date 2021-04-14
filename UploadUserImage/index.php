@@ -26,12 +26,12 @@ $result= mysqli_query($conn, $sql);
             $id=$row['idUsers'];//getting the user id
 
             //New Query Checking for the user Image
-            $sqlImg = SELECT * FROM profileimg WHERE userid='$id';
+            $sqlImg = "SELECT * FROM profileimg WHERE userid='$id'";
             $resultImg= mysqli_query($conn, $sqlImg);
                 //Looping out the data to Show
-                while (($rowImg = mysqli_fetch_assoc($resultImg)) {
+                while ($rowImg = mysqli_fetch_assoc($resultImg)) {
                     # code...
-                    echo"<div>";
+                    echo "<div>";
                             
                             if ($rowImg['status']==0) {
                                 # code...
@@ -41,10 +41,9 @@ $result= mysqli_query($conn, $sql);
                                 # code...
                                 echo"<img src='uploads/profiledefualt.jpg'>";
                             }
-                            echo "$row['username']";
-                     echo" </div>";
-                }
-
+                            echo $row['uidUsers'];
+                     echo "</div>";
+                } 
         }
     }
     else {
@@ -70,7 +69,7 @@ else {
     echo"You are not Logged in";
     echo "<br>";
     echo"
-    <form action="login.php" method="post">
+    <form action="signup.php" method="post">
 
     <input type="text" name="first_Name" placeholder="First Name">
     <br>
