@@ -11,6 +11,7 @@ include_once 'dbh.php';
     <meta name="keywords" content="book,language,PHP,author">
     <meta name="description" content="My PHP Repository">
 <title>Procedual PHP : Upload User Image and Register File</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -31,7 +32,7 @@ $result= mysqli_query($conn, $sql);
                 //Looping out the data to Show
                 while ($rowImg = mysqli_fetch_assoc($resultImg)) {
                     # code...
-                    echo "<div>";
+                    echo "<div class='user-container'>";
                             
                             if ($rowImg['status']==0) {
                                 # code...
@@ -41,7 +42,7 @@ $result= mysqli_query($conn, $sql);
                                 # code...
                                 echo"<img src='uploads/profiledefualt.jpg'>";
                             }
-                            echo $row['uidUsers'];
+                            echo "<p>".$row['uidUsers']."</p>";
                      echo "</div>";
                 } 
         }
@@ -69,19 +70,19 @@ else {
     echo"You are not Logged in";
     echo "<br>";
     echo"
-    <form action="signup.php" method="post">
+    <form action='signup.php' method='post'>
 
-    <input type="text" name="first_Name" placeholder="First Name">
+    <input type='text' name='first_Name' placeholder='First Name'>
     <br>
-    <input type="text" name="last_Name" placeholder="Last Name">
+    <input type='text'  name='last_Name' placeholder='Last Name'>
     <br>
-    <input type="text" name="user_Name" placeholder="User Name">
+    <input type='text'  name='user_Name' placeholder='User Name'>
     <br>
-    <input type="text" name="user_email" placeholder="Email address">
+    <input type='text' name='user_email' placeholder='Email address'>
     <br>     
-    <input type="password" name="pwd" placeholder="Password">
+    <input type='password' name='pwd' placeholder='Password'>
     <br>
-    <button type="submit" name="signup-submit">Sign Up</button>
+    <button type='submit' name='signup-submit'>Sign Up</button>
 
 </form>
     ";

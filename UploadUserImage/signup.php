@@ -1,5 +1,5 @@
 <?php
-include_once 'dbh.php'
+include_once 'dbh.php';
 
 $first=$_POST['first_Name'];
 $last=$_POST['last_Name'];
@@ -21,10 +21,10 @@ if (mysqli_num_rows($result)>0) {
     # code...
     while ($row= mysqli_fetch_assoc($result)) {
         # code..
-        $userid=$row['id']; ///getting the USer ID
+        $userid=$row['idUsers']; ///getting the USer ID
 
             //now insert into Profile Images
-            $sql ="INSERT INTO users (userid,status) 
+            $sql ="INSERT INTO profileimg (userid,status) 
             VALUES ('$userid',1)"; /// we are using 1 to show he doesnt have a profile Image 
             mysqli_query($conn, $sql);
             header("Location: index.php");
