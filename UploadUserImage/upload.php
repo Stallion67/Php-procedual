@@ -1,5 +1,8 @@
 <?php
 //Sart Session
+session_start();
+include_once 'dbh.php';
+$id=$_SESSION['id'];
 
 
 if (isset($_POST['submit'])) { //Checking if the upload button is clicked
@@ -24,12 +27,16 @@ if (isset($_POST['submit'])) { //Checking if the upload button is clicked
                 if ($fileError===0) { //Checking for File errors
 
                         if ($fileSize <750000){ //checking and limiting upload size to 2Mb
-                            $fileNameNew=uniqid('',true).".".$fileActualExt; //renaming the file with a unique ID
+                            $fileNameNew="profile".$id.".".$fileActualExt; //renaming the file with a unique ID
                             $fielDestination='uploads/'.$fileNameNew;
 
                             move_uploaded_file($fileTmpName, $fielDestination);
+
+                            //updating profile image table
+                            $sql ="UPDATE profileimg SET status=0 WHERE userid='$id';";
+                            $result = mysqli_query($conn, $sql);
                             
-                            header("Location: UploadImagesandFiles.php?uploadsuccess");
+                            header("Location: index.php");
                         
                         }else {
                             echo"your File Size is too big (Over 2MB)";
