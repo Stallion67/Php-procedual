@@ -36,7 +36,7 @@ $result= mysqli_query($conn, $sql);
                             
                             if ($rowImg['status']==0) {
                                 # code...
-                                echo"<img src='uploads/profile".$id.".jpg'>";
+                                echo"<img src='uploads/profile".$id.".jpg?'".mt_rand().">";
                             }
                             else {
                                 # code...
