@@ -65,6 +65,13 @@ if (isset($_SESSION['id'])){
             <button type='submit' name='submit'>UPLOAD</button>
         </form>
         ";
+
+        echo "
+        
+            <form action='deleteprofile.php' method='POST'  >
+            <button type='submit' name='submit'>Delete Profile Image</button>
+        </form>
+        ";
 } 
 else {    
     echo"You are not Logged in";
