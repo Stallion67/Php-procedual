@@ -113,6 +113,14 @@ else {
 <form action="logout.php" method="POST">
 <button type="submit" name="submitLogout">LOG-OUT</button>
 </form>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3>Delete Files from folder</h3>
+<form action="deletefile.php" method="POST">
+<button type="submit" name="submitdelete">Delete File</button>
+</form>
 <?php
 
 ?>
