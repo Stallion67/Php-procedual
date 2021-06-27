@@ -47,7 +47,7 @@
 <li><a href="./Multidimensionalarray.php">Multi-Dimensional Arrays</a></li>
 <li><a href="./UplaodingFiles/UploadImagesandFiles.php">Uploading Images and Files</a></li>
 <li><a href="./UploadUserImage/index.php">Register User and Upload Profile Image</a></li>
-
+<li><a href="./GenerateRandomKey/index.php">Register User and Upload Profile Image</a></li>
 <?php
 $conn; //Referes to  access connection to database from php includes file 
 

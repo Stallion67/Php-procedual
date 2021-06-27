@@ -12,7 +12,6 @@
         <title>PHP Login system : Signin</title>
         <!--Styles-->
         <link rel="stylesheet" href="styles/main.css">
-
     </head>
 <body>
  
